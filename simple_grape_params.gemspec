@@ -4,12 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'simple_grape_params/version'
 
 Gem::Specification.new do |spec|
-  spec.name    = 'simple_grape_params'
-  spec.version = SimpleGrapeParams::VERSION
-  spec.authors = ['piasekhgw']
-  spec.email   = ['piaseckiwojciechh@gmail.com']
-  spec.summary = 'Simple abstraction for Grape params'
-  spec.license = 'MIT'
+  spec.name        = 'simple_grape_params'
+  spec.version     = SimpleGrapeParams::VERSION
+  spec.authors     = ['piasekhgw']
+  spec.email       = ['piaseckiwojciechh@gmail.com']
+  spec.summary     = 'Simple abstraction for Grape params'
+  spec.description = 'Simple abstraction for Grape params validation and coercion'
+  spec.homepage    = 'https://github.com/piasekhgw/simple_grape_params'
+  spec.license     = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
