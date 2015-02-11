@@ -10,8 +10,8 @@ end
 
 describe Grape::API do
   describe '.validate_params_with' do
-    before  { allow(described_class).to receive(:params) }
-    it "invokes 'params' method with given block" do
+    before { allow(described_class).to receive(:params) }
+    it "invokes 'params' method with validator's block" do
       expect(described_class).to receive(:params) do |&block|
         expect(block.call).to eq('test')
       end
